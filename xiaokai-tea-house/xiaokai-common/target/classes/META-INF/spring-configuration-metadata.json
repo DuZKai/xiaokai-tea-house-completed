@@ -1,0 +1,119 @@
+{
+  "groups": [
+    {
+      "name": "xiaokai.alioss",
+      "type": "com.xiaokai.properties.AliOssProperties",
+      "sourceType": "com.xiaokai.properties.AliOssProperties"
+    },
+    {
+      "name": "xiaokai.jwt",
+      "type": "com.xiaokai.properties.JwtProperties",
+      "sourceType": "com.xiaokai.properties.JwtProperties"
+    },
+    {
+      "name": "xiaokai.wechat",
+      "type": "com.xiaokai.properties.WeChatProperties",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "xiaokai.alioss.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.AliOssProperties"
+    },
+    {
+      "name": "xiaokai.alioss.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.AliOssProperties"
+    },
+    {
+      "name": "xiaokai.alioss.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.AliOssProperties"
+    },
+    {
+      "name": "xiaokai.alioss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.AliOssProperties"
+    },
+    {
+      "name": "xiaokai.jwt.admin-secret-key",
+      "type": "java.lang.String",
+      "description": "管理端员工生成jwt令牌相关配置",
+      "sourceType": "com.xiaokai.properties.JwtProperties"
+    },
+    {
+      "name": "xiaokai.jwt.admin-token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.JwtProperties"
+    },
+    {
+      "name": "xiaokai.jwt.admin-ttl",
+      "type": "java.lang.Long",
+      "sourceType": "com.xiaokai.properties.JwtProperties"
+    },
+    {
+      "name": "xiaokai.jwt.user-secret-key",
+      "type": "java.lang.String",
+      "description": "用户端微信用户生成jwt令牌相关配置",
+      "sourceType": "com.xiaokai.properties.JwtProperties"
+    },
+    {
+      "name": "xiaokai.jwt.user-token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.JwtProperties"
+    },
+    {
+      "name": "xiaokai.jwt.user-ttl",
+      "type": "java.lang.Long",
+      "sourceType": "com.xiaokai.properties.JwtProperties"
+    },
+    {
+      "name": "xiaokai.wechat.api-v3-key",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.appid",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.mch-serial-no",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.mchid",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.notify-url",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.private-key-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.refund-notify-url",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    },
+    {
+      "name": "xiaokai.wechat.we-chat-pay-cert-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.xiaokai.properties.WeChatProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,44 @@
+xiaokai:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: xiaokai_tea_house
+    username: root
+    password: 1234
+
+  alioss:
+    bucket-name: 123
+    endpoint: 123
+    access-key-id: 123
+    access-key-secret: 123
+  redis:
+    # host: localhost
+    host: 192.168.126.129
+    port: 6379
+    password: 123321
+    database: 0
+
+  wechat:
+    appid: 123
+    secret: 123
+    # 微信支付信息，需要真实的商户信息
+    # mchid: 1561414331
+    # mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
+    # privateKeyFilePath: D:\apiclient_key.pem
+    # apiV3Key: CZBK51236435wxpay435434323FFDuv3
+    # weChatPayCertFilePath: D:\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
+    mchid: 1234567890
+    mchSerialNo: 1234567890
+    privateKeyFilePath: apiclient_key.pem
+    apiV3Key: 1234567890
+    weChatPayCertFilePath: wechatpay.pem
+    # 公网ip地址对应2个微信支付成功返回调用的地址
+    notifyUrl: https://123/notify/paySuccess
+    refundNotifyUrl: https://123/notify/refundSuccess
+  # 店铺地址
+  shop:
+    address: 深圳市星河丽思卡尔顿酒店二楼
+  # 高德地图API
+  amap:
+    key: 123

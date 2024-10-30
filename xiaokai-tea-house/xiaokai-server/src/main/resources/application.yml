@@ -1,0 +1,72 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    druid:
+      driver-class-name: ${xiaokai.datasource.driver-class-name}
+      url: jdbc:mysql://${xiaokai.datasource.host}:${xiaokai.datasource.port}/${xiaokai.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${xiaokai.datasource.username}
+      password: ${xiaokai.datasource.password}
+  redis:
+    host: ${xiaokai.redis.host}
+    port: ${xiaokai.redis.port}
+    password: ${xiaokai.redis.password}
+    database: ${xiaokai.redis.database}
+
+mybatis:
+  #mapper配置文件
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.xiaokai.entity
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com:
+      xiaokai:
+        mapper: debug
+        service: info
+        controller: info
+
+xiaokai:
+  jwt:
+    # 设置管理端jwt签名加密时使用的秘钥
+    admin-secret-key: xiaokaishifang
+    # 设置jwt过期时间
+    admin-ttl: 7200000
+    # 设置前端传递过来的令牌名称，不能写错，和前端保持一致
+    admin-token-name: token
+
+    # 设置用户jwt签名加密时使用的秘钥
+    user-secret-key: xiaokaishifang
+    # 设置jwt过期时间
+    user-ttl: 7200000
+    # 设置前端传递过来的令牌名称，不能写错，和前端保持一致
+    user-token-name: authentication
+
+  alioss:
+    endpoint: ${xiaokai.alioss.endpoint}
+    access-key-id: ${xiaokai.alioss.access-key-id}
+    access-key-secret: ${xiaokai.alioss.access-key-secret}
+    bucket-name: ${xiaokai.alioss.bucket-name}
+
+  wechat:
+    appid: ${xiaokai.wechat.appid}
+    secret: ${xiaokai.wechat.secret}
+    mchid : ${xiaokai.wechat.mchid}
+    mchSerialNo: ${xiaokai.wechat.mchSerialNo}
+    privateKeyFilePath: ${xiaokai.wechat.privateKeyFilePath}
+    apiV3Key: ${xiaokai.wechat.apiV3Key}
+    weChatPayCertFilePath: ${xiaokai.wechat.weChatPayCertFilePath}
+    notifyUrl: ${xiaokai.wechat.notifyUrl}
+    refundNotifyUrl: ${xiaokai.wechat.refundNotifyUrl}
+  shop:
+    address: ${xiaokai.shop.address}
+  amap:
+    key: ${xiaokai.amap.key}
